@@ -14,8 +14,8 @@
             <div class="pageType">
                 <span class="cItem1">Jabrayil Travel</span>
                 <span class="cItem2">Travel. Discover. Live.</span>
-                <button class="signup">Sign Up</button>
-                <button class="login">Log In</button>
+                <button class="signup" onclick="openSignUpPage()">Sign Up</button>
+                <button class="login" onclick="openLoginPage()">Log In</button>
             </div>
             <div class="accountType">
                 <span class="cItem3">Journey Begins</span>
@@ -46,7 +46,7 @@
                     </div>
                     <a><span class="fP">Forget Password?</span></a>
                 </div>
-                <button type="submit" class="loginButton">Log In</button>
+                <button type="submit" class="submitButton">Log In</button>
             </form>
         </div>
         <div class="second">
@@ -82,6 +82,34 @@
                 img.src="src/assets/notvisible.png"
                 psw.type="password";
             }
+        }
+
+        function openSignUpPage(){
+            let sign_up_button = document.getElementsByClassName("signup")[0];
+            let login_button = document.getElementsByClassName("login")[0];
+            let txt = document.getElementsByClassName("cItem4")[0];
+            let submit_button = document.getElementsByClassName("submitButton")[0];
+
+            submit_button.textContent = "Sign Up"
+            txt.textContent = "Sign up with Open account"
+            login_button.style.backgroundColor = "white";
+            login_button.style.color = "black";
+            sign_up_button.style.backgroundColor = "black";
+            sign_up_button.style.color = "white";
+        }
+
+        function openLoginPage(){
+            let sign_up_button = document.getElementsByClassName("signup")[0];
+            let login_button = document.getElementsByClassName("login")[0];
+            let txt = document.getElementsByClassName("cItem4")[0];
+            let submit_button = document.getElementsByClassName("submitButton")[0];
+
+            submit_button.textContent = "Log In"
+            txt.textContent = "Log in with Open account";
+            sign_up_button.style.backgroundColor = "white";
+            sign_up_button.style.color = "black";
+            login_button.style.backgroundColor = "black";
+            login_button.style.color = "white";
         }
     </script>
 </html>

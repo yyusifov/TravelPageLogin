@@ -221,14 +221,14 @@ span.fP:hover{
 
 /*  input typelari eyni olcuye getir standard olcu qoy fieldset ucun*/
 
-button.loginButton{
+button.submitButton{
     background-color: black;
     color: white;
     width: 20vw;
     height: 45px;
     transition: background-color 1s, color 1s;
 }
-button.loginButton:hover{
+button.submitButton:hover{
     background-color: white;
     color: black;
 }
