@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="src/css/firstPage.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">    
+</head>
+    <body>
+        <div class="first">
+            <div class="pageType">
+                <span class="cItem1">Jabrayil Travel</span>
+                <span class="cItem2">Travel. Discover. Live.</span>
+                <button class="signup">Sign Up</button>
+                <button class="login">Log In</button>
+            </div>
+            <div class="accountType">
+                <span class="cItem3">Journey Begins</span>
+                <span class="cItem4">Log in with Open account</span>
+                <a><div class="apple"></div></a>
+                <a><div class="gmail"></div></a>
+                <a><div class="insta"></div></a>
+            </div>
+            <div class="alternativeBreak">
+                <hr>
+                <span>or</span>
+                <hr>
+            </div>
+            <form>
+                <fieldset class="uname">
+                    <legend>Username</legend>
+                    <input type="text" id="username" name="username">
+                </fieldset>
+                <fieldset class="passw">
+                    <legend>Password</legend>
+                    <input type="password" id="password" name="password">
+                    <img src="src/assets/notvisible.png" id="visibility" onclick="changeIconForPassword()"/>
+                </fieldset>
+                <div class="passRep">
+                    <div class="remMe">
+                        <img src="src/assets/notselected.png" id="rmIc" onclick="changeIconForRememberMe()" width="18px" height="18px"/>
+                        <span>Remember me</span>
+                    </div>
+                    <a><span class="fP">Forget Password?</span></a>
+                </div>
+                <button type="submit" class="loginButton">Log In</button>
+            </form>
+        </div>
+        <div class="second">
+            <div class="bottomElements">
+                <div class="imgNav">
+                    <img src="src/assets/arrow_circle_left.png"/>
+                    <img src="src/assets/arrow_circle_right.png"/>
+                </div>
+                <div class="advText">
+                    <span class="txtF">Escape the Ordinary,</span><br>
+                    <span class="txtF">Embrace the Journey!</span>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        function changeIconForRememberMe(){
+            let img = document.getElementById("rmIc");
+            if(img.src.includes("src/assets/notselected.png")){
+                img.src="src/assets/selected2.webp";
+            }else{
+                img.src="src/assets/notselected.png";
+            }
+        }
+
+        function changeIconForPassword(){
+            let img = document.getElementById("visibility");
+            let psw = document.getElementById("password");
+            if(img.src.includes("src/assets/notvisible.png")){
+                img.src="src/assets/visible.png"
+                psw.type="text";
+            }else{
+                img.src="src/assets/notvisible.png"
+                psw.type="password";
+            }
+        }
+    </script>
+</html>

@@ -1,0 +1,274 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    margin: 0%;
+}
+div.first{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 35px;
+}
+div.pageType{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    column-gap: 10px;
+}
+.cItem1, .cItem2{
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-size: 20px;
+    font-style: normal;
+}
+span.cItem1{
+    font-family: "Asimovian", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+}
+button{
+    width: 170px;
+    height: 39px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-family: "Share Tech", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+button:hover{
+    cursor: pointer;
+}
+
+button.signup{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: background-color 1s, color 1s;
+}
+button.signup:hover{
+    background-color: black;
+    color: white;
+}
+
+button.login{
+    background-color: black;
+    color: white;
+    transition: background-color 1s, color 1s;
+}
+button.login:hover{
+    background-color:white;
+    color: black;
+}
+
+div.accountType{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 40px;
+}
+span.cItem3{
+    font-family: "Caprasimo", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    padding-right: 120px;
+}
+span.cItem4{
+    font-family: "Share Tech", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    font-style: normal;
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    padding-right: 120px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+div.apple{
+    background-image: url("../assets/applelogo.png");
+    width: 100px;
+    height: 40px;
+    background-size: 22px 22px;    
+    background-repeat: no-repeat;
+    border-color: #4FB7B3;
+    border-width: 1px;
+    border-style: solid;
+    background-position: center;
+    border-radius: 10px;
+
+}
+div.apple:hover{
+    background-color: #4FB7B3;
+    cursor:pointer;
+    border-color: white;
+}
+div.gmail{
+    background-image: url("../assets/gmaillogo.png");
+    width: 100px;
+    height: 40px;
+    background-size: 25px 15px;    
+    background-repeat: no-repeat;
+    border-color: #4FB7B3;
+    border-width: 1px;
+    border-style: solid;
+    background-position: center;
+    border-radius: 10px;
+}
+div.gmail:hover{
+    background-color: #4FB7B3;
+    cursor:pointer;
+    border-color: white;
+}
+div.insta{
+    background-image: url("../assets/instalogo.png");
+    width: 100px;
+    height: 40px;
+    background-size: 34px 34px;    
+    background-repeat: no-repeat;
+    border-color: #4FB7B3;
+    border-width: 1px;
+    border-style: solid;
+    background-position: center;
+    border-radius: 10px;
+}
+div.insta:hover{
+    background-color: #4FB7B3;
+    cursor:pointer;
+    border-color: white;
+}
+
+div.alternativeBreak{
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+}
+hr{
+    background-color: #4FB7B3;
+    border-color: #4FB7B3;
+    width: 150px;
+}
+a{
+    display: flex;
+    justify-content: center;
+}
+
+/*yuxaridaku a ni duzelt*/
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+fieldset{
+    width: 25vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 1vw;
+    padding-left: 0.2vw;
+    padding-right: 0.2vw;
+    border-color: #4FB7B3;
+    border-radius: 7px;
+    border-width: 1px;
+    margin-top: 10px;
+}
+.uname{
+    width: 25vw;
+}
+.visibility{
+    width: 1vw;
+    height: 1vh;
+}
+
+
+input[type="text"]{
+    width: 20vw;
+    border: 0;
+}
+input[type="password"]{
+    width: 20vw;
+    border:0;
+}
+input:focus{
+    border: 0;
+    outline: 0;
+}
+
+div.remMe{
+    display: flex;
+    flex-direction: row;
+}
+div.passRep{
+    display: flex;
+    flex-direction: row;
+    column-gap: 140px;
+    padding-top: 10px;
+}
+span.fP:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*  input typelari eyni olcuye getir standard olcu qoy fieldset ucun*/
+
+button.loginButton{
+    background-color: black;
+    color: white;
+    width: 20vw;
+    height: 45px;
+    transition: background-color 1s, color 1s;
+}
+button.loginButton:hover{
+    background-color: white;
+    color: black;
+}
+
+
+div.second{
+    width: 45%;
+    border-radius: 60px 0px 0px 60px;
+    background-image: url("../assets/canada5.webp");
+    display: flex;
+    flex-direction: column-reverse;
+}
+div.bottomElements {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; 
+}
+
+span.txtF{
+    color: white;
+    font-family: "Caprasimo", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+div.advText{
+    padding-bottom: 50px;
+}
+div.imgNav{
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+
+
+@media screen and (max-width: 1050px){
+    div.first{
+        width: 100%;
+    }
+    div.second{
+        display: none;
+    }
+}
