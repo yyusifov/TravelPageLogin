@@ -30,14 +30,18 @@
                 <hr>
             </div>
             <form>
-                <fieldset class="uname">
+                <fieldset id="uname">
                     <legend>Username</legend>
                     <input type="text" id="username" name="username">
                 </fieldset>
-                <fieldset class="passw">
+                <fieldset id="uemail">
+                    <legend>Email</legend>
+                    <input type="email" id="email" name="email">
+                </fieldset>
+                <fieldset id="passw">
                     <legend>Password</legend>
                     <input type="password" id="password" name="password">
-                    <img src="src/assets/notvisible.png" id="visibility" onclick="changeIconForPassword()"/>
+                    <img src="src/assets/notvisible.png" id="visibilityicon" onclick="changeIconForPassword()"/>
                 </fieldset>
                 <div class="passRep">
                     <div class="remMe">
@@ -89,8 +93,10 @@
             let login_button = document.getElementsByClassName("login")[0];
             let txt = document.getElementsByClassName("cItem4")[0];
             let submit_button = document.getElementsByClassName("submitButton")[0];
+            let email_field = document.getElementById("uemail");
 
-            submit_button.textContent = "Sign Up"
+            email_field.style.display = "flex";
+            submit_button.textContent = "Sign Up";
             txt.textContent = "Sign up with Open account"
             login_button.style.backgroundColor = "white";
             login_button.style.color = "black";
@@ -103,7 +109,9 @@
             let login_button = document.getElementsByClassName("login")[0];
             let txt = document.getElementsByClassName("cItem4")[0];
             let submit_button = document.getElementsByClassName("submitButton")[0];
+            let email_field = document.getElementById("uemail");
 
+            email_field.style.display = "none";
             submit_button.textContent = "Log In"
             txt.textContent = "Log in with Open account";
             sign_up_button.style.backgroundColor = "white";

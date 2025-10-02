@@ -182,16 +182,20 @@ fieldset{
     border-width: 1px;
     margin-top: 10px;
 }
-.uname{
+fieldset#uname{
     width: 25vw;
 }
-.visibility{
+.visibilityicon{
     width: 1vw;
     height: 1vh;
 }
 
 
 input[type="text"]{
+    width: 20vw;
+    border: 0;
+}
+input[type="email"]{
     width: 20vw;
     border: 0;
 }
@@ -202,6 +206,10 @@ input[type="password"]{
 input:focus{
     border: 0;
     outline: 0;
+}
+
+fieldset#uemail{
+    display: none;
 }
 
 div.remMe{
